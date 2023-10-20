@@ -47,7 +47,7 @@ round_hud()
 			break;	
 		default:
 			roundCounter destroyElem();
-			roundCounter = createserverfontstring("default", 20);
+			roundCounter = createserverfontstring("default", 25);
 			roundCounter SetValue(level.round_number);
 			break;
 	}
@@ -87,9 +87,10 @@ round_hud()
 				break;	
 			default:
 				roundCounter destroyElem();
-				roundCounter = createserverfontstring("default", 20);
+				roundCounter = createserverfontstring("default", 25);
 				roundCounter SetPoint("LEFT", "TOPLEFT", -50, 10);
 				roundCounter SetValue(level.round_number);
+				roundCounter.color = (1,1,0.25);
 				break;
 		}
 		roundCounter FadeOverTime(0.7);
