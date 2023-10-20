@@ -68,9 +68,9 @@ round_hud()
 		roundCounter MoveOverTime(0.3);
 		roundCounter ScaleOverTime(0.3, 80, 80);
 		roundCounter.horzalign = "center";
-		if (level.round_number == 2 || 3)
+		if (level.round_number == 2 || level.round_number == 3)
 		{
-			roundCounter.x = 6+level.round_number;
+			roundCounter.x = 7+level.round_number;
 		}
 		else
 		{
